@@ -9,9 +9,9 @@ import PySimpleGUI as sg
 # sg.theme('Default1')
 # sg.set_options(text_color='black', background_color='#A6B2BE', text_element_background_color='#A6B2BE')
 # ------ Menu Definition ------ #
-menu_def = [['&File', ['&Open', '&Save', 'E&xit', 'Properties']],
-            ['&Edit', ['Paste', ['Special', 'Normal', ], 'Undo'], ],
-            ['&Help', '&About...'], ]
+# menu_def = [['&File', ['&Open', '&Save', 'E&xit', 'Properties']],
+#             ['&Edit', ['Paste', ['Special', 'Normal', ], 'Undo'], ],
+#             ['&Help', '&About...'], ]
 
 # ------ Column Definition ------ #
 column1 = [[sg.Text('Column 1', justification='center', size=(10, 1))],
@@ -22,7 +22,7 @@ column1 = [[sg.Text('Column 1', justification='center', size=(10, 1))],
            [sg.Spin(values=('Spin Box 1', '2', '3'), initial_value='Spin Box 3')]]
 
 layout = [
-    [sg.Menu(menu_def, tearoff=True)],
+    # [sg.Menu(menu_def, tearoff=True)],
     [sg.Text('(Almost) All widgets in one Window!', size=(
         30, 1), justification='center', font=("Helvetica", 25), relief=sg.RELIEF_RIDGE)],
     [sg.Text('Here is some text.... and a place to enter text')],
